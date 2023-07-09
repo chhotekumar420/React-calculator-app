@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(227, 224, 211);
+  
+}
+
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator{
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 10px 15px rgb(255, 0, 0);
+  border-radius: 10px ;
+}
+
+.display-result{
+  padding: 15px;
+  width: 100%;
+  max-width: 270px;
+  background-color: rgb(231, 231, 215);
+  text-align: right;
+  font-weight: 500;
+  font-size: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(195, 96, 10);
+  border: none;
+  
+}
+
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+.keypad button:hover{
+  background-color: rgb(231, 167, 31);
+  transition: .4s;
+  
+}
+
+.keypad {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.keypad button {
+  flex:25%;
+  border: 1px solid rgb(132, 132, 132);
+  background-color: rgb(226, 225, 225);
+  font-size: 20px;
+  
+}
+
+.keypad .wide{
+  flex:50%;
+}
+
+.keypad #tools{
+  background-color: rgb(192, 124, 79);
+  color: aliceblue;
+}
+
+.keypad #top-line {
+  background-color: rgb(181, 158, 65);
+}
+
+#tools:hover{
+  background-color: rgb(132, 146, 40);
+  transition: .4s;
+}
+
+#top-line:hover{
+  background-color: rgb(193, 103, 44);
+  transition: .4s;
+  color: wheat;
+}
